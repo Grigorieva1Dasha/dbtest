@@ -11,8 +11,8 @@
 		include ('resources/functions.php');
 		if ($_GET){
 			switch ($_GET['function']) {
-	            case 'brands':
-	                $Functions->show_brands_list();
+	            		case 'brands':
+	                		$Functions->show_brands_list();
 				break;
 				case 'cars':
 					$Functions->show_cars_list();
