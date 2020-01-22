@@ -6,7 +6,7 @@
     <?php
     if (empty($_GET['id_order_car'])) {
       foreach ($clients as $client){
-        echo '<option value="' . $client['id_client'] . '"' //. ($client['id_client'] === $orders_cars['id_client'] ? ' selected' : '') 
+        echo '<option value="' . $client['id_client'] . '"' 
         . '>';
         echo $client['surname'].' '.$client['name'].' '.$client['patronymic'];
         echo '</option>';
@@ -30,7 +30,7 @@
     <?php
     if (empty($_GET['id_order_car'])){
         foreach ($cars as $car) {
-            echo '<option value="' . $car['id_car'] . '"' //. ($car['id_car'] === $orders_cars['id_car'] ? ' selected' : '') 
+            echo '<option value="' . $car['id_car'] . '"' 
             . '>';
             echo $car['id_brand'].' '.$car['price'];
             echo '</option>';
