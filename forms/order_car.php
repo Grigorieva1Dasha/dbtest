@@ -41,7 +41,7 @@
 </select><br>
 
 <label>Статус</label><br>
-  <input class="form-control" type="text" name="status" ><br>
+  <input class="form-control" type="text" name="status" value="<?= !empty($orders_cars['status']) ? $orders_cars['status'] : ""?>"><br>
   <br>
   <button class="btn btn-primary" type="submit">Сохранить</button>
   <button class="btn btn-primary" type="button" onclick="window.location='/index.php?function=orders_cars'">Назад</button>
